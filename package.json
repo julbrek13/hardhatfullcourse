@@ -1,9 +1,10 @@
 {
   "dependencies": {
+    "ethers": "^5.7.1",
+    "fs-extra": "^10.1.0",
     "solc": "^0.8.17"
   },
   "scripts": {
     "compile": "npx solcjs --bin --abi --include-path node_modules/ --base-path . -o . Simplestorage.sol "
   }
 }
-//creat scripts for best performance time.
