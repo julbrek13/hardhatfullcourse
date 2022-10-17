@@ -5,7 +5,10 @@ async function main() {
   // First, compile this!
   // And make sure to have your ganache network up!
   let provider = new ethers.providers.JsonRpcProvider("HTTP://127.0.0.1:7545");
-  let wallet = new ethers.Wallet("b327685cbcb0ae03b4af9a0d95343742767de44e5d4c8fa175e0ee5db76afa5d", provider);
+  let wallet = new ethers.Wallet(
+    "b327685cbcb0ae03b4af9a0d95343742767de44e5d4c8fa175e0ee5db76afa5d",
+    provider
+  );
   // const encryptedJson = fs.readFileSync("./.encryptedKey.json", "utf8");
   // let wallet = new ethers.Wallet.fromEncryptedJsonSync(
   //   encryptedJson,
