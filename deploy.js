@@ -5,7 +5,9 @@ require("dotenv").config();
 async function main() {
   // First, compile this!
   // And make sure to have your ganache network up!
-  let provider = new ethers.providers.JsonRpcProvider("HTTP://127.0.0.1:7545");
+  let provider = new ethers.providers.JsonRpcProvider(
+    "https://eth-goerli.g.alchemy.com/v2/TqutO7nFbD7m9veR4USCeJ5eezM48G95"
+  );
   const encryptedJson = fs.readFileSync("./.encryptedKey.json", "utf8");
   let wallet = new ethers.Wallet.fromEncryptedJsonSync(
     encryptedJson,
