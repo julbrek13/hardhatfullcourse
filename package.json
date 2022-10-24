@@ -8,5 +8,8 @@
   },
   "scripts": {
     "compile": "npx solcjs --bin --abi --include-path node_modules/ --base-path . -o . Simplestorage.sol "
+  },
+  "devDependencies": {
+    "hardhat": "^2.12.0"
   }
 }
